@@ -1,0 +1,40 @@
+{
+  "name": "@itsmaneka/actionpay-node",
+  "version": "1.0.0",
+  "description": "API de integração com a plataforma de afiliados Actionpay",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc",
+    "test": "jest",
+    "prepublish": "npm run test && npm run build"
+  },
+  "author": "Emanuel Ozorio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsManeka/actionpay-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsManeka/actionpay-node/issues"
+  },
+  "homepage": "https://github.com/itsManeka/actionpay-node#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "lib"
+    ]
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  }
+}
