@@ -1,16 +1,16 @@
 {
-  "name": "@itsmaneka/actionpay-node",
+  "name": "actionpay-node",
   "version": "1.0.0",
   "description": "API de integração com a plataforma de afiliados Actionpay",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean & tsc",
     "test": "jest",
-    "prepublish": "npm run test && npm run build"
+    "prepublish": "npm run test & npm run build"
   },
-  "author": "Emanuel Ozorio",
+  "author": "itsManeka",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,1 +1,1 @@
-export * from './actionpay';
+export * from './actionpay'
